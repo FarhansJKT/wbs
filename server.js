@@ -141,7 +141,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // router
 app.get('/', function(req, res) {
-    res.render('home', {title: 'Hallo', name: 'Farhans'});
+    res.send('Hallo world');
 });
 
 app.get('/auth/register', function(req, res, next) {
